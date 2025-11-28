@@ -56,6 +56,30 @@ body{
     width: 100%;
 }
 
+/*----------------Home Hero Section---------------------*/
+.home-hero {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;      
+}
+
+.hero-headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #E5E7EB;
+}
+
+.hero-text {
+    text-align: left;
+}
 /*----------------Hero Section---------------------*/
 
 .hero-section {
@@ -119,6 +143,8 @@ body{
     text-decoration: none;
 }
 
+/* ------------------ About Section ------------------ */
+
 /* ------------------ Featured Work Section ------------------ */
 
 .featured_work {
@@ -166,13 +192,22 @@ body{
 }
 
 /* ------------------Projects Page------------------ */
+.project-card-link {
+    text-decoration: none;   
+    color: inherit;         
+    display: block;         
+}
+
+.project-card-link:hover {
+    cursor: pointer;         
+}
 .project-cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr)); 
     column-gap: 500px;
     row-gap: 60px;
     justify-items: center;
-    margin: 250px auto 200px;
+    margin: 140px auto 200px;
     max-width: 1200px;
     padding: 0 24px;
 }
@@ -191,7 +226,7 @@ body{
 }
 
 .project-card:hover {
-    background-color: #C4C4C4;  
+    background-color: #aeb2bb;  
     transform: translateY(-4px); 
 }
 
@@ -204,7 +239,7 @@ body{
 }
 
 .project-text {
-    font-family: "Julius Sans One", sans-serif;
+    font-family: "Julius Sans One", sans-serif; /*change font to more readbale*/
     font-size: 12px;
     letter-spacing: 1px;
     color: #1F2937;
@@ -212,15 +247,16 @@ body{
 }
 
 /* ------------------ Experience ------------------ */
+
 .experience-section {
     background-color: #FAFAFA;
-    padding: 80px 0 120px;
-    margin-top: 150px;
+    padding: 70px 0 120px;
+    margin-top: 0;               
 }
 
 .experience-inner {
-    width: 90%;
-    max-width: 900px;
+    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -228,11 +264,18 @@ body{
 }
 
 .experience-card {
-    background-color: #D9D9D9;
-    border-radius: 24px;
-    padding: 24px 28px;
+    background-color: #E5E7EB;
+    border-radius: 22px;
+    padding: 24px 30px;
     box-sizing: border-box;
-    margin: 3px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    border: 1px solid #DDDFE3;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
 
 .experience-header {
@@ -241,6 +284,8 @@ body{
     align-items: baseline;
     gap: 16px;
     margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D1D5DB;
 }
 
 .experience-role {
@@ -249,31 +294,34 @@ body{
     letter-spacing: 1px;
     color: #1F2937;
     margin: 0 0 4px 0;
+    text-transform: uppercase;
 }
 
 .experience-company {
     font-family: "Julius Sans One", sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
-    color: #1F2937;
+    color: #4B5563;
     margin: 0;
 }
 
 .experience-date_of_employment {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 1px;
-    color: #1F2937;
+    color: #6B7280;
+    text-transform: uppercase;
     margin: 0;
 }
 
 .experience-description {
-    margin: 0;
-    padding-left: 18px;
+    margin: 8px 0 0 18px;
+    padding: 0;
     font-family: "Julius Sans One", sans-serif;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #1F2937;
+    line-height: 1.6;
 }
 
 .experience-description li + li {
