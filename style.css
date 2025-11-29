@@ -1,6 +1,11 @@
 /*google font for julias sans*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     background-color: #FAFAFA;
 }
@@ -145,50 +150,96 @@ body{
 
 /* ------------------ About Section ------------------ */
 
-/* ------------------ Featured Work Section ------------------ */
+.about-professional-section {
+    background-color: #FAFAFA;
+    padding: 120px 0 140px;
+}
+
+.about-professional-inner {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-professional-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #1F2937;
+    margin-bottom: 25px;
+}
+
+.about-professional-text {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #1F2937;
+    letter-spacing: .5px;
+    margin-bottom: 18px;
+}
 
 .featured_work {
-    margin-top: 40px;               
-    background-color: #FAFAFA;      
-    padding: 100px 0;
+    margin-top: 40px;
+    background-color: #FAFAFA;
+    padding: 80px 0 120px;
+    border-top: 1px solid #E5E7EB;        /* subtle separation from About */
 }
 
 .featured_work-inner {
     width: 90%;
-    max-width: 900px;
+    max-width: 1100px;                    /* a bit wider to breathe */
     margin: 0 auto;
 }
 
 .featured_work-title {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: 2px;
     color: #1F2937;
-    margin-bottom: 60px;
-    text-align: left;
-    margin-left: -100px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;                   /* centered heading */
+    text-decoration: none;
 }
+
+/* Project rows become card-like blocks */
 
 .project-row {
     display: flex;
     align-items: center;
-    gap: 270px;                 
-    margin-bottom: 60px;
+    gap: 40px;
+    margin-bottom: 32px;
+
+    background-color: #E5E7EB;
+    border-radius: 24px;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-row:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
 }
 
 .project-image img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;     
-    border-radius: 4px;   
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
 }
+
+/* Text block */
 
 .project-description {
     font-family: "Julius Sans One", sans-serif;
     font-size: 13px;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     color: #1F2937;
+    line-height: 1.8;
+    max-width: 650px;
 }
 
 /* ------------------Projects Page------------------ */
@@ -239,7 +290,7 @@ body{
 }
 
 .project-text {
-    font-family: "Julius Sans One", sans-serif; /*change font to more readbale*/
+    font-family: "Julius Sans One", sans-serif; 
     font-size: 12px;
     letter-spacing: 1px;
     color: #1F2937;
@@ -326,4 +377,103 @@ body{
 
 .experience-description li + li {
     margin-top: 4px;
+}
+
+/* ------------------ Skills & Awards Page ------------------ */
+
+.skills-awards-section {
+    background-color: #FAFAFA;
+    padding: 80px 0 120px;
+}
+
+.skills-awards-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;  
+    gap: 80px;
+}
+
+.skills-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #1F2937;
+    margin-bottom: 32px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 48px;
+}
+
+.skill-group-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #1F2937;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-list li {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.awards-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.award-item {
+    border-left: 2px solid #D9D9D9;
+    padding-left: 16px;
+}
+
+.award-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.award-name {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #1F2937;
+    text-transform: uppercase;
+}
+
+.award-date {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #6B7280;
+}
+
+.award-description {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #1F2937;
+    margin: 0;
+    line-height: 1.7;
 }
