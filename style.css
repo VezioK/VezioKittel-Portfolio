@@ -808,3 +808,155 @@ body{
         max-width: 100%;
     }
 }
+
+@media (min-width: 400px) and (max-width: 766px) {
+    .navheader nav {
+        padding: 18px 10px;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .navlinks {
+        display: flex;
+        flex-wrap: wrap;               
+        justify-content: center;
+        gap: 12px 0;                   
+        padding: 0;
+    }
+
+    .navlinks li {
+        flex: 0 0 50%;                 
+        display: flex;
+        justify-content: center;
+    }
+
+    .navlinks a {
+        font-size: 16px;
+        letter-spacing: 0.22em;
+    }
+
+/* ----------Home----------*/
+
+    .hero-section {
+        padding: 55px 0 60px;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .hero-headshot {
+        width: 135px;
+        height: 135px;
+    }
+
+    .hero-name {
+        font-size: 26px;
+    }
+
+    .hero-info,
+    .hero-contactlink {
+        font-size: 12px;
+        letter-spacing: 0.09em;
+    }
+
+/*----------Experience----------*/
+
+    .exp-card {
+        width: 88%;
+        max-width: 520px;
+        margin: 22px auto;
+        padding: 24px 22px;
+    }
+
+    .exp-title {
+        font-size: 13px;              
+    }
+
+    .exp-company,
+    .exp-date {
+        font-size: 12px;
+    }
+
+    .exp-card ul li {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+/*----------Projects----------*/
+
+    .project-cards {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+        gap: 42px;
+        max-width: 500px;              
+        margin: 80px auto 130px;
+        padding: 0 16px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 330px;              
+        padding: 20px 20px;
+        border-radius: 30px;
+    }
+
+    .project-image {
+        height: 155px;                 
+        margin-bottom: 18px;
+    }
+
+    .project-text {
+        font-size: 14px;               
+        line-height: 1.7;
+        letter-spacing: 0.06em;
+        margin-top: 6px;
+        text-align: center;
+    }
+
+/*----------Skills & Awards Page----------*/
+
+    .skills-awards-inner {
+        display: flex;
+        flex-direction: column;        
+        gap: 48px;
+        max-width: 520px;
+        margin: 60px auto 130px;
+        padding: 0 18px;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        row-gap: 26px;
+    }
+
+    .skill-group {
+        max-width: 100%;
+    }
+
+    .skill-group-title,
+    .award-name {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+    }
+
+    .skill-list li,
+    .award-description {
+        font-size: 13px;               
+        line-height: 1.7;
+    }
+
+    .award-item {
+        border-left: none !important;
+    }
+
+    .award-item::before {
+        content: none !important;
+    }
+}
