@@ -122,7 +122,7 @@ body{
     text-decoration: none;
 }
 
-/* ------------------ Footer ------------------ */
+/* ------------------Footer------------------ */
 
 .footer {
     background-color: #FAFAFA;     
@@ -152,7 +152,7 @@ body{
     text-decoration: none;
 }
 
-/* ------------------ About Section ------------------ */
+/* ------------------About Section------------------ */
 
 .about-professional-section {
     background-color: #FAFAFA;
@@ -295,7 +295,7 @@ body{
     max-width: 650px;
 }
 
-/* ------------------ Experience ------------------ */
+/* ------------------Experience------------------ */
 
 .experience-section {
     background-color: #FAFAFA;
@@ -377,7 +377,7 @@ body{
     margin-top: 4px;
 }
 
-/* ------------------ Skills & Awards Page ------------------ */
+/* ------------------Skills & Awards Page------------------ */
 
 .skills-awards-section {
     background-color: #FAFAFA;
@@ -468,18 +468,343 @@ body{
 }
 
 .award-description {
-    font-family: "Julius Sans One", sans-serif;
-    font-size: 12px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 14px;
     letter-spacing: 0.5px;
     color: #1F2937;
     margin: 0;
     line-height: 1.7;
 }
 
-@media (max-width: 992px) {
+/* ------------------Responsive Design------------------ */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navheader nav {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .navlinks {
+        gap: 80px;                 
+    }
+
+    .navlinks a {
+        font-size: 22px;
+    }
+
+/* ----------Hero Section---------- */
+
+    .hero-section {
+        padding: 70px 0 80px;      
+    }
+
+    .hero-content {
+        gap: 40px;
+    }
+
+    .hero-headshot {
+        width: 150px;
+        height: 150px;             
+    }
+
+    .hero-name {
+        font-size: 30px;           
+    }
+
+    .hero-info,
+    .hero-contactlink {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+    }
+
+/* ----------Experience---------- */
+
+    .exp-card {
+        width: 85%;              
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 32px 40px;
+    }
+
+    .exp-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .exp-title {
+        font-size: 18px;
+    }
+
+    .exp-company {
+        font-size: 13px;
+    }
+
+    .exp-date {
+        font-size: 13px;
+    }
+
+    .exp-card ul li {
+        font-size: 13px;
+    }
+
+/* ----------Projects---------- */
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+        column-gap: 60px;
+        row-gap: 60px;
+        max-width: 900px;
+        margin: 120px auto 180px;
+        padding: 0 24px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 380px;
+        padding: 34px 26px;
+        height: 420px;             
+    }
+
+    .project-image {
+        height: 190px;             
+    }
+
+    .project-text {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.6px;
+        text-align: center;
+    }
+
+/* ----------Skills & Awards Page---------- */
+
+    .skills-awards-inner {
+        max-width: 900px;
+        margin: 64px auto 160px;   
+        column-gap: 60px;
+    }
+
+    .skills-title {
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .skill-group-title,
+    .award-name {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+    }
+
+    .skill-list li,
+    .award-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
 }
 
-@media (max-width: ) {
-    
+@media (min-width: 768px) and (max-width: 900px) {
+    .navheader nav {
+        max-width: 620px;          
+        margin: 0 auto;
+    }
+
+    .navlinks {
+        gap: 48px;                 
+    }
+
+/* ----------Projects---------- */
+
+    .project-cards {
+        grid-template-columns: 1fr;  
+        max-width: 700px;            
+        row-gap: 70px;
+    }
+
+    .project-card {
+        max-width: 480px;            
+        margin: 0 auto;              
+        height: 440px;             
+    }
+
+/* ----------Skills & Awards Page---------- */
+
+    .skills-awards-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        max-width: 760px;
+        margin: 40px auto 140px;     
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 32px;
+    }
+
+    .skill-group {
+        max-width: 100%;
+    }
+
+    .skill-group-title {
+        font-size: 14px;
+        letter-spacing: 1.8px;
+    }
+
+    .skill-list li {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .awards-list {
+        max-width: 100%;
+    }
+    }
+
+@media (max-width: 767px) {
+    .navheader nav {
+        padding-top: 28px;          
+        padding-bottom: 28px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .navlinks {
+        gap: 40px;                  
+    }
+
+    .navlinks a {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+    }
+
+/* ----------Hero Section---------- */
+
+    .hero-section {
+        padding: 50px 0 60px;       
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;         
+        gap: 24px;
+    }
+
+    .hero-headshot {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hero-name {
+        font-size: 24px;            
+    }
+
+    .hero-info,
+    .hero-contactlink {
+        font-size: 11px;            
+        letter-spacing: 0.05em;
+    }
+
+    .hero-name,
+    .hero-info,
+    .hero-contactlink {
+        text-align: center ;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+/* ----------Experience---------- */
+
+    .exp-card {
+        width: 92%;
+        padding: 26px 24px;
+        margin: 20px auto;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .exp-title {
+        font-size: 15px;           
+    }
+
+    .exp-company,
+    .exp-date,
+    .exp-card ul li {
+        font-size: 11px;            
+    }
+
+/* ----------Projects---------- */
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: 1fr;   
+        row-gap: 60px;
+        max-width: 90%;
+        margin: 80px auto 120px;
+        padding: 0;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 22px;
+        height: 460px;                
+        margin: 0 auto;
+    }
+
+    .project-image {
+        height: 220px;
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+
+    .project-text {
+        font-size: 13px;
+        line-height: 1.65;
+        letter-spacing: 0.5px;
+        margin-top: 14px;
+    }
+
+/* ----------Skills & Awards Page---------- */
+
+    .skills-awards-inner {
+        flex-direction: column;
+        max-width: 92%;
+        margin: 40px auto 140px;
+        gap: 50px;
+    }
+
+    .skills-title {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+
+    .skill-group-title {
+        font-size: 13px;
+        letter-spacing: 1.4px;
+    }
+
+    .skill-list li,
+    .award-description {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .awards-list {
+        max-width: 100%;
+    }
 }
