@@ -163,8 +163,8 @@ body{
 
 .footer-item a,
 .git-link {
-    color: #1F2937;        /* same as footer text */
-    text-decoration: none; /* remove blue underline */
+    color: #1F2937;       
+    text-decoration: none; 
 }
 
 .footer-item a:hover,
@@ -227,8 +227,35 @@ body{
     text-decoration: none;
 }
 
+/* ------------------Projects/Research Page------------------ */
 
-/* ------------------Projects Page------------------ */
+.section-header {
+    max-width: 1200px;          
+    margin: 140px auto 18px;    
+    padding: 0 24px;            
+    transform: translateX(-50px);
+}
+
+.section-title {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1F2937;
+
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b7b8bb;
+}
+
+.section-header + .project-cards {
+    margin-top: 0;              
+}
+
+.project-cards:not(.research-cards) {
+    margin-bottom: 80px;
+}
 
 .project-card-link {
     text-decoration: none;   
@@ -285,7 +312,6 @@ body{
     text-align: center;
 }
 
-
 .project-row {
     display: flex;
     align-items: center;
@@ -304,7 +330,6 @@ body{
     transform: translateY(-4px);
     box-shadow: 0 16px 30px rgba(15, 23, 42, 0.10);
 }
-
 
 .project-description {
     font-family: "Julius Sans One", sans-serif;
@@ -569,7 +594,7 @@ body{
         font-size: 13px;
     }
 
-/* ----------Projects---------- */
+/* ----------Projects/Research---------- */
 
     .project-cards {
         display: grid;
@@ -635,8 +660,18 @@ body{
         gap: 48px;                 
     }
 
-/* ----------Projects---------- */
+/* ----------Projects/Research---------- */
+    .section-header {
+    max-width: 900px;           
+    margin: 120px auto 18px;    
+    padding: 0 24px;           
+    transform: translateX(12px); 
+    text-align: left;           
+    }
 
+    .section-title {
+        border-bottom: 1px solid #b7b8bb; 
+    }
     .project-cards {
         grid-template-columns: 1fr;  
         max-width: 700px;            
@@ -762,7 +797,18 @@ body{
         font-size: 11px;            
     }
 
-/* ----------Projects---------- */
+/* ----------Projects/Research---------- */
+    .section-header {
+    max-width: 900px;          
+    margin: 120px auto 18px;    
+    padding: 0 24px;            
+    transform: translateX(-18px); 
+    text-align: left;           
+    }
+
+    .section-title {
+        border-bottom: 1px solid #D1D5DB; 
+    }
 
     .project-cards {
         display: grid;
@@ -912,8 +958,19 @@ body{
         line-height: 1.6;
     }
 
-/*----------Projects----------*/
+/*----------Projects/Research----------*/
+    .section-header {
+    max-width: 500px;           
+    margin: 80px auto 18px;     
+    padding: 0 16px;            
+    transform: none;            
+    text-align: center;         
+    }
 
+    .section-title {
+        text-align: center;
+        border-bottom: 1px solid #b7b8bb; 
+    }
     .project-cards {
         display: flex;
         flex-direction: column;        
