@@ -1042,3 +1042,7 @@ body{
         content: none !important;
     }
 }
+
+* {
+  outline: 1px solid red;
+}
