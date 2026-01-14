@@ -728,7 +728,7 @@ body{
     }
 
     .navlinks {
-        gap: 16px;                  
+        gap: 40px;                  
     }
 
     .navlinks a {
@@ -1043,6 +1043,3 @@ body{
     }
 }
 
-* {
-  outline: 1px solid red;
-}
