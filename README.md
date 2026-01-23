@@ -1,4 +1,4 @@
-## Proffesional (Personal) Portfolio
+## Profesional (Personal) Portfolio
 
 ## Overview
 Created and maintained a personal portfolio demonstrating abilities with responsive grid structures, interactive hover states, custom typography, and reusable UI elements across pages. Designed with structured information hierarchy and subtle visual styling to highlight content while maintaining a professional aesthetic. 
