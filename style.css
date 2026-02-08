@@ -522,586 +522,617 @@ body{
 }
 
 /* ------------------Responsive Design------------------ */
+
+@media (min-width: 1025px) {
+.navheader nav {
+    max-width: 1200px;   
+    margin: 0 auto;
+    padding-left: 48px;  
+    padding-right: 48px;
+}
+
+.navlinks {
+    justify-content: space-between;
+    gap: 120px;         
+}
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    /* ----------Header---------- */
-    .navheader nav {
-        width: 92%;
-        max-width: 900px;
-        margin: 0 auto;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
+/* ----------Header---------- */
 
-    .navlinks {
-        gap: 70px; 
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+.navheader nav {
+    width: 92%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-    .navlinks a {
-        font-size: 22px;
-    }
+.navlinks {
+    gap: 70px; 
+    flex-wrap: nowrap;
+    justify-content: center;
+}
 
-    /* ----------Hero Section---------- */
-    .hero-section {
-        padding: 70px 0 80px;
-    }
+.navlinks a {
+    font-size: 22px;
+}
 
-    .hero-content {
-        gap: 40px;
-    }
+/* ----------Hero Section---------- */
 
-    .hero-headshot {
-        width: 150px;
-        height: 150px;
-    }
+.hero-section {
+    padding: 70px 0 80px;
+}
 
-    .hero-name {
-        font-size: 30px;
-    }
+.hero-content {
+    gap: 40px;
+}
 
-    .hero-info,
-    .hero-contactlink {
-        font-size: 13px;
-        letter-spacing: 0.08em;
-    }
+.hero-headshot {
+    width: 150px;
+    height: 150px;
+}
 
-    /* ----------Experience---------- */
-    .exp-card {
-        width: 85%;
-        max-width: 900px;
-        margin: 24px auto;
-        padding: 32px 40px;
-    }
+.hero-name {
+    font-size: 30px;
+}
 
-    .exp-header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
+.hero-info,
+.hero-contactlink {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+}
 
-    .exp-title {
-        font-size: 18px;
-    }
+/* ----------Experience---------- */
 
-    .exp-company {
-        font-size: 13px;
-    }
+.exp-card {
+    width: 85%;
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 32px 40px;
+}
 
-    .exp-date {
-        font-size: 13px;
-    }
+.exp-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
-    .exp-card ul li {
-        font-size: 13px;
-    }
+.exp-title {
+    font-size: 18px;
+}
 
-    /* ----------Projects/Research---------- */
-    .project-cards {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 60px;
-        row-gap: 60px;
-        max-width: 900px;
-        margin: 120px auto 180px;
-        padding: 0 24px;
-    }
+.exp-company {
+    font-size: 13px;
+}
 
-    .project-card {
-        width: 100%;
-        max-width: 380px;
-        padding: 34px 26px;
-        height: 420px;
-    }
+.exp-date {
+    font-size: 13px;
+}
 
-    .project-image {
-        height: 190px;
-    }
+.exp-card ul li {
+    font-size: 13px;
+}
 
-    .project-text {
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.6px;
-        text-align: center;
-    }
+/* ----------Projects/Research---------- */
 
-    /* ----------Skills & Awards Page---------- */
-    .skills-awards-inner {
-        max-width: 900px;
-        margin: 64px auto 160px;
-        column-gap: 60px;
-    }
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 60px;
+    row-gap: 60px;
+    max-width: 900px;
+    margin: 120px auto 180px;
+    padding: 0 24px;
+}
 
-    .skills-title {
-        font-size: 26px;
-        letter-spacing: 3px;
-    }
+.project-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 34px 26px;
+    height: 420px;
+}
 
-    .skill-group-title,
-    .award-name {
-        font-size: 14px;
-        letter-spacing: 1.4px;
-    }
+.project-image {
+    height: 190px;
+}
 
-    .skill-list li,
-    .award-description {
-        font-size: 12px;
-        line-height: 1.7;
-    }
+.project-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
 
-    /* ----------Footer---------- */
-    .footer-inner {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 6px 18px; 
-        text-align: center;
-    }
+/* ----------Skills & Awards Page---------- */
 
-    .footer-item {
-        line-height: 1.35;
-    }
+.skills-awards-inner {
+    max-width: 900px;
+    margin: 64px auto 160px;
+    column-gap: 60px;
+}
+
+.skills-title {
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.skill-group-title,
+.award-name {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.skill-list li,
+.award-description {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ----------Footer---------- */
+
+.footer-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 18px; 
+    text-align: center;
+}
+
+.footer-item {
+    line-height: 1.35;
+}
 }
 
 @media (min-width: 768px) and (max-width: 900px) {
+.navheader nav {
+    max-width: 620px;
+    margin: 0 auto;
+}
 
-    .navheader nav {
-        max-width: 620px;
-        margin: 0 auto;
-    }
+.navlinks {
+    gap: 48px;
+}
 
-    .navlinks {
-        gap: 48px;
-    }
+/* ----------Projects/Research---------- */
 
-    /* ----------Projects/Research---------- */
-    .section-header {
-        max-width: 900px;
-        margin: 120px auto 18px;
-        padding: 0 24px;
-        transform: translateX(12px);
-        text-align: left;
-    }
+.section-header {
+    max-width: 900px;
+    margin: 120px auto 18px;
+    padding: 0 24px;
+    transform: translateX(12px);
+    text-align: left;
+}
 
-    .section-title {
-        border-bottom: 1px solid #b7b8bb;
-    }
+.section-title {
+    border-bottom: 1px solid #b7b8bb;
+}
 
-    .project-cards {
-        grid-template-columns: 1fr;
-        max-width: 700px;
-        row-gap: 70px;
-    }
+.project-cards {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    row-gap: 70px;
+}
 
-    .project-card {
-        max-width: 480px;
-        margin: 0 auto;
-        height: 440px;
-    }
+.project-card {
+    max-width: 480px;
+    margin: 0 auto;
+    height: 440px;
+}
 
-    /* ----------Skills & Awards Page---------- */
-    .skills-awards-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 60px;
-        max-width: 760px;
-        margin: 40px auto 140px;
-    }
+/* ----------Skills & Awards Page---------- */
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 32px;
-    }
+.skills-awards-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 760px;
+    margin: 40px auto 140px;
+}
 
-    .skill-group {
-        max-width: 100%;
-    }
+.skills-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 32px;
+}
 
-    .skill-group-title {
-        font-size: 14px;
-        letter-spacing: 1.8px;
-    }
+.skill-group {
+    max-width: 100%;
+}
 
-    .skill-list li {
-        font-size: 12px;
-        line-height: 1.7;
-    }
+.skill-group-title {
+    font-size: 14px;
+    letter-spacing: 1.8px;
+}
 
-    .awards-list {
-        max-width: 100%;
-    }
+.skill-list li {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.awards-list {
+    max-width: 100%;
+}
 }
 
 @media (max-width: 767px) {
-    html, body {
-        overflow-x: hidden;
-    }
+html, body {
+    overflow-x: hidden;
+}
 
-    /* ----------Header---------- */
-    .navheader nav {
-        width: 92%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding-top: 22px;
-        padding-bottom: 22px;
-    }
+/* ----------Header---------- */
 
-    .navlinks {
-        gap: 14px 24px; 
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
+.navheader nav {
+    width: 92%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
 
-    .navlinks li {
-        flex: 0 0 auto;
-        display: flex;
-        justify-content: center;
-    }
+.navlinks {
+    gap: 14px 24px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
 
-    .navlinks a {
-        font-size: 16px;
-        letter-spacing: 0.18em;
-        white-space: nowrap;
-    }
+.navlinks li {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
 
-    /* ----------Hero Section---------- */
-    .hero-section {
-        padding: 50px 0 60px;
-    }
+.navlinks a {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    white-space: nowrap;
+}
 
-    .hero-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 24px;
-    }
+/* ----------Hero Section---------- */
 
-    .hero-headshot {
-        width: 130px;
-        height: 130px;
-    }
+.hero-section {
+    padding: 50px 0 60px;
+}
 
-    .hero-name {
-        font-size: 24px;
-    }
+.hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
 
-    .hero-info,
-    .hero-contactlink {
-        font-size: 11px;
-        letter-spacing: 0.05em;
-    }
+.hero-headshot {
+    width: 130px;
+    height: 130px;
+}
 
-    .hero-name,
-    .hero-info,
-    .hero-contactlink {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+.hero-name {
+    font-size: 24px;
+}
 
-    /* ----------Experience---------- */
-    .exp-card {
-        width: 92%;
-        padding: 26px 24px;
-        margin: 20px auto;
-    }
+.hero-info,
+.hero-contactlink {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
 
-    .exp-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-    }
+.hero-name,
+.hero-info,
+.hero-contactlink {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
-    .exp-title {
-        font-size: 15px;
-    }
+/* ----------Experience---------- */
 
-    .exp-company,
-    .exp-date,
-    .exp-card ul li {
-        font-size: 11px;
-    }
+.exp-card {
+    width: 92%;
+    padding: 26px 24px;
+    margin: 20px auto;
+}
 
-    /* ----------Projects/Research---------- */
-    .section-header {
-        max-width: 900px;
-        margin: 120px auto 18px;
-        padding: 0 24px;
-        transform: translateX(-18px);
-        text-align: left;
-    }
+.exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
 
-    .section-title {
-        border-bottom: 1px solid #D1D5DB;
-    }
+.exp-title {
+    font-size: 15px;
+}
 
-    .project-cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 60px;
-        max-width: 90%;
-        margin: 80px auto 120px;
-        padding: 0;
-    }
+.exp-company,
+.exp-date,
+.exp-card ul li {
+    font-size: 11px;
+}
 
-    .project-card {
-        width: 100%;
-        max-width: 420px;
-        padding: 28px 22px;
-        height: 460px;
-        margin: 0 auto;
-    }
+/* ----------Projects/Research---------- */
 
-    .project-image {
-        height: 220px;
-        border-radius: 16px;
-        margin-bottom: 20px;
-    }
+.section-header {
+    max-width: 900px;
+    margin: 120px auto 18px;
+    padding: 0 24px;
+    transform: translateX(-18px);
+    text-align: left;
+}
 
-    .project-text {
-        font-size: 13px;
-        line-height: 1.65;
-        letter-spacing: 0.5px;
-        margin-top: 14px;
-    }
+.section-title {
+    border-bottom: 1px solid #D1D5DB;
+}
 
-    /* ----------Skills & Awards Page---------- */
-    .skills-awards-inner {
-        display: flex;          
-        flex-direction: column;
-        gap: 32px;
-        width: 92%;
-        max-width: 520px;
-        margin: 40px auto 140px;
-        padding: 0;
-        box-sizing: border-box;
-    }
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    max-width: 90%;
+    margin: 80px auto 120px;
+    padding: 0;
+}
 
-    .skills-title {
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
+.project-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px 22px;
+    height: 460px;
+    margin: 0 auto;
+}
 
-    .skills-grid {
-        display: flex;          
-        flex-direction: column;
-        gap: 22px;
-    }
+.project-image {
+    height: 220px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
 
-    .skill-group,
-    .awards-list,
-    .award-item {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+.project-text {
+    font-size: 13px;
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    margin-top: 14px;
+}
 
-    .skill-group-title {
-        font-size: 13px;
-        letter-spacing: 1.4px;
-    }
+/* ----------Skills & Awards Page---------- */
 
-    .skill-list li,
-    .award-description {
-        font-size: 12px;
-        line-height: 1.65;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
+.skills-awards-inner {
+    display: flex;          
+    flex-direction: column;
+    gap: 32px;
+    width: 92%;
+    max-width: 520px;
+    margin: 40px auto 140px;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .award-name {
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
+.skills-title {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
 
-    .award-item {
-        border-left: none;
-        padding-left: 0;
-    }
+.skills-grid {
+    display: flex;          
+    flex-direction: column;
+    gap: 22px;
+}
 
-    /* ----------Footer---------- */
-    .footer-inner {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;         
-        text-align: center;
-    }
+.skill-group,
+.awards-list,
+.award-item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
-    .footer-item {
-        width: 100%;
-        word-break: break-word;
-        line-height: 1.25;
-    }
+.skill-group-title {
+    font-size: 13px;
+    letter-spacing: 1.4px;
+}
+
+.skill-list li,
+.award-description {
+    font-size: 12px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.award-name {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.award-item {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* ----------Footer---------- */
+
+.footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;         
+    text-align: center;
+}
+
+.footer-item {
+    width: 100%;
+    word-break: break-word;
+    line-height: 1.25;
+}
 }
 
 @media (min-width: 400px) and (max-width: 766px) {
+.navheader nav {
+    padding: 18px 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
-    .navheader nav {
-        padding: 18px 10px;
-        max-width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
+.navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 0;
+    padding: 0;
+}
 
-    .navlinks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 0;
-        padding: 0;
-    }
+.navlinks li {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+}
 
-    .navlinks li {
-        flex: 0 0 50%;
-        display: flex;
-        justify-content: center;
-    }
+.navlinks a {
+    font-size: 16px;
+    letter-spacing: 0.22em;
+}
 
-    .navlinks a {
-        font-size: 16px;
-        letter-spacing: 0.22em;
-    }
+/* ----------Home---------- */
 
-    /* ----------Home---------- */
-    .hero-section {
-        padding: 55px 0 60px;
-        text-align: center;
-    }
+.hero-section {
+    padding: 55px 0 60px;
+    text-align: center;
+}
 
-    .hero-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 28px;
-    }
+.hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
 
-    .hero-headshot {
-        width: 135px;
-        height: 135px;
-    }
+.hero-headshot {
+    width: 135px;
+    height: 135px;
+}
 
-    .hero-name {
-        font-size: 26px;
-    }
+.hero-name {
+    font-size: 26px;
+}
 
-    .hero-info {
-        font-size: 12px;
-        letter-spacing: 0.09em;
-    }
+.hero-info {
+    font-size: 12px;
+    letter-spacing: 0.09em;
+}
 
-    .hero-contactlink {
-        font-size: 12px;
-        letter-spacing: 0.09em;
-        padding-right: 80px; /* keep until headshot added */
-    }
+.hero-contactlink {
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    padding-right: 80px; /* keep until headshot added */
+}
 
-    /* ----------Experience---------- */
-    .exp-card {
-        width: 88%;
-        max-width: 520px;
-        margin: 22px auto;
-        padding: 24px 22px;
-    }
+/* ----------Experience---------- */
 
-    .exp-title {
-        font-size: 13px;
-    }
+.exp-card {
+    width: 88%;
+    max-width: 520px;
+    margin: 22px auto;
+    padding: 24px 22px;
+}
 
-    .exp-company,
-    .exp-date {
-        font-size: 12px;
-    }
+.exp-title {
+    font-size: 13px;
+}
 
-    .exp-card ul li {
-        font-size: 12px;
-        line-height: 1.6;
-    }
+.exp-company,
+.exp-date {
+    font-size: 12px;
+}
 
-    /* ----------Projects/Research---------- */
-    .section-header {
-        max-width: 500px;
-        margin: 80px auto 18px;
-        padding: 0 16px;
-        transform: none;
-        text-align: center;
-    }
+.exp-card ul li {
+    font-size: 12px;
+    line-height: 1.6;
+}
 
-    .section-title {
-        text-align: center;
-        border-bottom: 1px solid #b7b8bb;
-    }
+/* ----------Projects/Research---------- */
 
-    .project-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 42px;
-        max-width: 500px;
-        margin: 80px auto 130px;
-        padding: 0 16px;
-    }
+.section-header {
+    max-width: 500px;
+    margin: 80px auto 18px;
+    padding: 0 16px;
+    transform: none;
+    text-align: center;
+}
 
-    .project-card {
-        width: 100%;
-        max-width: 330px;
-        padding: 20px 20px;
-        border-radius: 30px;
-    }
+.section-title {
+    text-align: center;
+    border-bottom: 1px solid #b7b8bb;
+}
 
-    .project-image {
-        height: 155px;
-        margin-bottom: 18px;
-    }
+.project-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+    max-width: 500px;
+    margin: 80px auto 130px;
+    padding: 0 16px;
+}
 
-    .project-text {
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.06em;
-        margin-top: 6px;
-        text-align: center;
-    }
+.project-card {
+    width: 100%;
+    max-width: 330px;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
 
-    /* ----------Skills & Awards Page---------- */
-    .skills-awards-inner {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        max-width: 520px;
-        margin: 60px auto 130px;
-        padding: 0 18px;
-    }
+.project-image {
+    height: 155px;
+    margin-bottom: 18px;
+}
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-        row-gap: 26px;
-    }
+.project-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+    text-align: center;
+}
 
-    .skill-group {
-        max-width: 100%;
-    }
+/* ----------Skills & Awards Page---------- */
 
-    .skill-group-title,
-    .award-name {
-        font-size: 14px;
-        letter-spacing: 1.4px;
-    }
+.skills-awards-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 520px;
+    margin: 60px auto 130px;
+    padding: 0 18px;
+}
 
-    .skill-list li,
-    .award-description {
-        font-size: 13px;
-        line-height: 1.7;
-    }
+.skills-grid {
+    grid-template-columns: 1fr;
+    row-gap: 26px;
+}
 
-    .award-item {
-        border-left: none !important;
-    }
+.skill-group {
+    max-width: 100%;
+}
 
-    .award-item::before {
-        content: none !important;
-    }
+.skill-group-title,
+.award-name {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.skill-list li,
+.award-description {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.award-item {
+    border-left: none !important;
+}
+
+.award-item::before {
+    content: none !important;
+}
 }
