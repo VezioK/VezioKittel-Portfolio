@@ -1043,3 +1043,84 @@ body{
     }
 }
 
+
+
+
+
+/*_________________*/
+/* =========================
+   TABLET (768px–1024px)
+   Header/Footer only
+   ========================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Header: reduce spacing so links don't push off-screen */
+  .navheader nav {
+    width: 92%;
+    max-width: 900px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .navlinks {
+    gap: 70px;               /* was 205px on desktop */
+    flex-wrap: nowrap;
+  }
+
+  .navlinks a {
+    font-size: 22px;         /* was 30px on desktop */
+  }
+
+  /* Footer: allow wrapping instead of forcing space-between collisions */
+  .footer-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 28px;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 767px)
+   Header/Footer only
+   ========================= */
+@media (max-width: 767px) {
+
+  /* Header: wrap nav links neatly on small screens */
+  .navheader nav {
+    width: 92%;
+    max-width: 100%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .navlinks {
+    gap: 14px 24px;          /* row gap / column gap */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navlinks li {
+    flex: 0 0 auto;
+  }
+
+  .navlinks a {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    white-space: nowrap;     /* keeps EXPERIENCE from breaking weirdly */
+  }
+
+  /* Footer: stack cleanly so email/phone/github/linkedin don't clash */
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-item {
+    width: 100%;
+    word-break: break-word;  /* prevents long email from overflowing */
+  }
+}
